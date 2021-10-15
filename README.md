@@ -15,8 +15,7 @@ python3运行
 
 使用帮助：python3 apache-httpd-path-traversal.py -h
 
-
-![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-00.png)
+![](https://github.com/theLSA/apache-httpd-path-traversal-checker/blob/master/demo/apache-httpd-path-traversal-checker-00.png)
 
 
 单url检测：python3 apache-httpd-path-traversal.py -u "http://1.2.3.4:80"

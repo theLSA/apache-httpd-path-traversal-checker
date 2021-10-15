@@ -20,28 +20,24 @@ python3运行
 
 单url检测：python3 apache-httpd-path-traversal.py -u "http://1.2.3.4:80"
 
+![](https://github.com/theLSA/apache-httpd-path-traversal-checker/blob/master/demo/apache-httpd-path-traversal-checker-01.png)
 
-![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-01.png)
-
-![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-02.png)
+![](https://github.com/theLSA/apache-httpd-path-traversal-checker/blob/master/demo/apache-httpd-path-traversal-checker-02.png)
 
 
 批量检测：python3 apache-httpd-path-traversal.py -f urls.txt -t 30 -s 3
 
-
-![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-03.png)
+![](https://github.com/theLSA/apache-httpd-path-traversal-checker/blob/master/demo/apache-httpd-path-traversal-checker-03.png)
 
 
 文件读取：python3 apache-httpd-path-traversal.py -u "http://1.2.3.4:80" --cdir /icons --readfile
 
-
-![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-04.png)
+![](https://github.com/theLSA/apache-httpd-path-traversal-checker/blob/master/demo/apache-httpd-path-traversal-checker-04.png)
 
 
 命令执行：python3 apache-httpd-path-traversal.py -u "http://1.2.3.4:80" --cdir /cgi-bin --rce
 
-
-![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-05.png)
+![](https://github.com/theLSA/apache-httpd-path-traversal-checker/blob/master/demo/apache-httpd-path-traversal-checker-05.png)
 
 
 

@@ -88,7 +88,7 @@ rce1 = "echo Content-Type: text/plain; echo; id"
 
 
 
-## 0x02 TODO
+## 0x03 TODO
 
 1.可能会增加对windows系统的检测。
 
@@ -96,7 +96,7 @@ rce1 = "echo Content-Type: text/plain; echo; id"
 
 
 
-## 0x03 反馈
+## 0x04 反馈
 
 [issus](https://github.com/theLSA/apache-httpd-path-traversal-checker/issues)
 

@@ -15,10 +15,12 @@ python3运行
 
 使用帮助：python3 apache-httpd-path-traversal.py -h
 
+
 ![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-00.png)
 
 
 单url检测：python3 apache-httpd-path-traversal.py -u "http://1.2.3.4:80"
+
 
 ![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-01.png)
 
@@ -27,15 +29,18 @@ python3运行
 
 批量检测：python3 apache-httpd-path-traversal.py -f urls.txt -t 30 -s 3
 
+
 ![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-03.png)
 
 
 文件读取：python3 apache-httpd-path-traversal.py -u "http://1.2.3.4:80" --cdir /icons --readfile
 
+
 ![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-04.png)
 
 
 命令执行：python3 apache-httpd-path-traversal.py -u "http://1.2.3.4:80" --cdir /cgi-bin --rce
+
 
 ![](https://github.com/theLSA/apache-httpd-path-traversal-checker/raw/master/demo/apache-httpd-path-traversal-05.png)
 

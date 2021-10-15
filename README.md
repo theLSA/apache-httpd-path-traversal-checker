@@ -79,7 +79,9 @@ rce0 = "echo;id"
 rce1 = "echo Content-Type: text/plain; echo; id"
 
 //rce的post方法改为get方法好像也行。
+
 //payload要根据目标的apache路径层数变化跳出，一般4层够了。
+
 //要有一个apache存在的目录，比如icons/或cgi-bin/
 
 
@@ -87,6 +89,7 @@ rce1 = "echo Content-Type: text/plain; echo; id"
 ## 0x02 TODO
 
 1.可能会增加对windows系统的检测。
+
 2.可能会增加反弹shell等进一步利用。
 
 

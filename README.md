@@ -7,6 +7,8 @@
 
 20211008，又出了2.4.50的目录穿越（cve-2021-42013），是绕过了cve-2021-41773的修复。
 
+漏洞详情参考：[apache httpd 2.4.49/2.4.50 目录穿越漏洞重现及分析](https://www.lsablog.com/networksec/penetration/apache-httpd-path-traversal-analysis/) 
+
 
 
 ## 0x01 快速开始

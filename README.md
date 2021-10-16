@@ -51,7 +51,7 @@ python3运行
 
 多线程，可选择超时时间，以提高效率。
 
-可选存在的目录(--cdir)，rce的shell(--rceshell)，以提供灵活性。
+可选存在的目录（--cdir），rce的shell（--rceshell），以提供灵活性。
 
 检测时采用可能的公共目录列表，提高命中率。
 commonDirList = ['/cgi-bin', '/icons', '/assets', '/uploads', '/img', '/image']

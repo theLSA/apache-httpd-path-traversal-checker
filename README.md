@@ -3,7 +3,7 @@
 
 ## 0x00 概述
 
-20211005，网上曝出apache httpd 2.4.49的目录穿越漏洞（cve-2021-41773），可造成任意文件读取（穿越的目录允许被访问，比如配置了<Directory />Require all granted</Directory> 默认不允许）或命令执行（rce需开启cgi，默认并不包含cgi模块）
+20211005，网上曝出apache httpd 2.4.49的目录穿越漏洞（cve-2021-41773），可造成任意文件读取（穿越的目录允许被访问，如配置了`<Directory />Require all granted</Directory>`， 默认不允许）或命令执行（rce需开启cgi，默认不包含cgi模块）
 
 20211008，又出了2.4.50的目录穿越（cve-2021-42013），是绕过了cve-2021-41773的修复。
 
@@ -51,9 +51,9 @@ python3运行
 
 多线程，可选择超时时间，以提高效率。
 
-可选公共目录，rce的shell，以提供灵活性。
+可选存在的目录(--cdir)，rce的shell(--rceshell)，以提供灵活性。
 
-采用可能的公共目录列表，提高命中率。
+检测时采用可能的公共目录列表，提高命中率。
 commonDirList = ['/cgi-bin', '/icons', '/assets', '/uploads', '/img', '/image']
 
 注意：有时候文件读取是利用icons目录，而rce要用cgi-bin目录，具体情况具体分析。
